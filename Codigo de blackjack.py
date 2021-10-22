@@ -90,7 +90,7 @@ def blackjack(lista):
 def jugar_de_nuevo():
     quieres=input("¿Quieres jugar de nuevo, escribe si o no = ")
     while quieres.lower()!="si" and quieres.lower()!="no":
-                print("\n ☠ Solo puedes escribir si o no \n")
+                print("\n (✖╭╮✖) Solo puedes escribir si o no \n")
                 quieres=input("¿Quieres jugar de nuevo, escribe si o no = ")
     time.sleep(0.5)
     if quieres.lower()=="si":
@@ -159,7 +159,7 @@ def juego():
                 if blackjack(Cartas_de_compu)=="blackjack" and blackjack(Cartas_de_jugador)=="No hay blackjack, continuamos.":
                     print("Estas son las cartas de la compu= ",Cartas_de_compu)
                     time.sleep(1)
-                    print("La compu ha ganado.（>﹏<） \n")
+                    print("La compu ha ganado.（ >﹏< ） \n")
                 elif blackjack(Cartas_de_compu)=="blackjack" and blackjack(Cartas_de_jugador)=="blackjack":
                     print("Hay un empate.  (-_-) \n")
     #2° parte del juego
@@ -172,7 +172,7 @@ def juego():
             resp=input("    ¿Quieres otra carta?, Escribe si o no = ")
             print("\n")
             while resp.lower()!="si" and resp.lower()!="no":
-                print("☠ Solo puedes escribir si o no")
+                print("(✖╭╮✖) Solo puedes escribir si o no")
                 resp=input("¿Quieres otra carta?, Escribe si o no = ")
             time.sleep(0.5)
             if resp.lower()=="si":
@@ -188,7 +188,7 @@ def juego():
                 print("Suma de puntos de ", nombre,"hasta ahora= ",x,"\n")
                 if x>21:
                     time.sleep(1)
-                    print("Perdiste, suerte para la proxima.（>﹏<）","\n")
+                    print("Perdiste, suerte para la proxima.（ >﹏< ）","\n")
                     flag=False
                 elif x==21 and puntuacion(puntos_compu)==21:
                     time.sleep(2)
@@ -240,27 +240,27 @@ def juego():
                 print("Le ganaste a la compu.¡¡¡Felicidades!!! \(◦'⌣'◦)/ ","\n")
             elif puntuacion(puntos_compu)> puntuacion(puntos_jugador)and 21>puntuacion(puntos_compu):
                 time.sleep(1)
-                print("Ganó la compu, suerte para la proxima.（>﹏<）","\n")
+                print("Ganó la compu, suerte para la proxima.（ >﹏< ）","\n")
             elif puntuacion(puntos_jugador)==puntuacion(puntos_compu):
                 time.sleep(1)
                 print("Empate. (-_-)","\n")
             elif puntuacion(puntos_compu)==21 and 21>puntuacion(puntos_jugador):
                 time.sleep(1)
-                print("Ganó la compu, suerte para la proxima.（>﹏<）","\n")
+                print("Ganó la compu, suerte para la proxima.（ >﹏< ）","\n")
             time.sleep(1)
-            print("Termino juego.¯\_(ツ)_/¯")
+            print("Termino juego.(ノ°ο°)ノ")
             jugar_de_nuevo()
         elif puntuacion(puntos_jugador)>21:
             time.sleep(1)
-            print("Termino el juego. ¯\_(ツ)_/¯")
+            print("Termino el juego. (ノ°ο°)ノ")
             jugar_de_nuevo()
         elif puntuacion(puntos_jugador)==21:
             time.sleep(1)
-            print("Termino el juego. ¯\_(ツ)_/¯")
+            print("Termino el juego. (ノ°ο°)ノ")
             jugar_de_nuevo()
     else:
         time.sleep(1)
-        print("Termino el juego. ¯\_(ツ)_/¯")
+        print("Termino el juego. (ノ°ο°)ノ")
         jugar_de_nuevo()
 
         
