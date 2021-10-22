@@ -24,6 +24,8 @@ Este es un codigo que simula el famoso juego del Blackjack o 21, donde el crupie
 
 - Finalmente se comprueba quien gana.
 
-## Observación
-Jugaremos la version americana en la que  el crupier, tras poner su primera carta visible,en el caso de que haya posibilidad de conseguir blackjack (es decir que la carta visible sea un As o una carta de valor 10), tendrá que comprobar la segunda carta antes de continuar para ver si tiene blackjack. En el caso de tener blackjack, lo comunicará al momento finalizando el juego, con lo que en caso de que continúe el juego por no tener blackjack, sabremos que no estamos jugando contra un blackjack del crupier.
+## Observaciónes
+-Jugaremos la version americana en la que  el crupier, tras poner su primera carta visible,en el caso de que haya posibilidad de conseguir blackjack (es decir que la carta visible sea un As o una carta de valor 10), tendrá que comprobar la segunda carta antes de continuar para ver si tiene blackjack. En el caso de tener blackjack, lo comunicará al momento finalizando el juego, con lo que en caso de que continúe el juego por no tener blackjack, sabremos que no estamos jugando contra un blackjack del crupier.
+
+-Para poder jugar el juego, puedes ejecutar el archivo "Codigo de blackjack.py" desde una terminal o llamar la función juego() desde el archivo "Practica del codigo.ipynb"
 
